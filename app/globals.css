@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+.background-transition {
+  transition:
+    background-color 0.5s ease,
+    background-image 0.5s ease;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  font-family: var(--font-sans), sans-serif;
+}
+
+code,
+pre {
+  font-family: var(--font-mono), monospace;
+}
+
+@layer components {
+  .hover-underline {
+    position: relative;
+    display: inline-block;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #4c1d95;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .hover-underline:hover::before {
+    visibility: visible;
+    width: 100%;
   }
 }
