@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className='dark:text-violet-50 text-black p-4'>
+    <div className='px-6 py-10 animate-blur-to-normal'>
       <p>contact</p>
     </div>
   );

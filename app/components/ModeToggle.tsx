@@ -1,7 +1,6 @@
 'use client';
-import { Classic } from '@theme-toggles/react';
-import '@theme-toggles/react/css/Classic.css';
 import { useEffect, useState } from 'react';
+import { ThemeIconButton } from 'react-simple-animated-dark-mode-button';
 
 export default function DarkModeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -33,13 +32,13 @@ export default function DarkModeToggle() {
   };
 
   return (
-    <Classic
-      toggled={isDarkMode}
-      toggle={toggleDarkMode}
-      className='dark:text-violet-50 text-black text-3xl'
-      placeholder={undefined}
-      onPointerEnterCapture={undefined}
-      onPointerLeaveCapture={undefined}
+    <ThemeIconButton
+      isDarkMode={!isDarkMode}
+      onClick={() => toggleDarkMode()}
+      color={{
+        light: '#8b5cf6',
+        dark: '#eab308',
+      }}
     />
   );
 }

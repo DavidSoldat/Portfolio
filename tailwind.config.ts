@@ -6,21 +6,33 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'selector',
+  darkMode: ['selector'],
   theme: {
     extend: {
       keyframes: {
         moveSlow: {
-          '0%, 100%': { transform: 'translate(0, 0)' },
-          '50%': { transform: 'translate(50px, -30px)' },
+          '0%, 100%': {
+            transform: 'translate(0, 0)',
+          },
+          '50%': {
+            transform: 'translate(50px, -30px)',
+          },
         },
         moveFast: {
-          '0%, 100%': { transform: 'translate(0, 0)' },
-          '50%': { transform: 'translate(-80px, 50px)' },
+          '0%, 100%': {
+            transform: 'translate(0, 0)',
+          },
+          '50%': {
+            transform: 'translate(-80px, 50px)',
+          },
         },
         moveMedium: {
-          '0%, 100%': { transform: 'translate(0, 0)' },
-          '50%': { transform: 'translate(40px, -20px)' },
+          '0%, 100%': {
+            transform: 'translate(0, 0)',
+          },
+          '50%': {
+            transform: 'translate(40px, -20px)',
+          },
         },
         blurToNormal: {
           '0%': {
@@ -41,6 +53,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 };
 export default config;
