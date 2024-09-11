@@ -57,12 +57,15 @@ export default function Home() {
           TailwindCSS among other modern technologies. When I&apos;m not coding,
           you might find me watching{' '}
           <span>
-            <SiF1 className="dark:text-purple-30 inline-block text-gray-600" />{' '}
+            <SiF1
+              className="inline-block text-gray-600 dark:text-purple-300"
+              size={40}
+            />{' '}
           </span>{' '}
           or binging on a TV show. Based in Banja Luka{' '}
           <div className="group relative inline">
             <span className="text-gray-600 dark:text-purple-300">(.ba)</span>
-            <div className="absolute hidden w-48 rounded-lg bg-gray-800 p-2 text-sm text-purple-100 shadow-lg group-hover:block">
+            <div className="absolute bottom-10 left-0 hidden w-48 rounded-lg bg-gray-800 p-2 text-sm text-purple-100 shadow-lg group-hover:block">
               Bosnia and Herzegovina
             </div>
           </div>{' '}
