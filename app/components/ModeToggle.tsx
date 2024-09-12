@@ -36,7 +36,7 @@ export default function DarkModeToggle() {
       isDarkMode={!isDarkMode}
       onClick={() => toggleDarkMode()}
       color={{
-        light: '#8b5cf6',
+        light: '#a855f7',
         dark: '#eab308',
       }}
     />

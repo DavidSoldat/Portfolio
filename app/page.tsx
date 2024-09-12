@@ -12,8 +12,8 @@ import { SiF1 } from 'react-icons/si';
 export default function Home() {
   return (
     <div className="flex w-full animate-blur-to-normal flex-col items-center gap-16 px-6 py-10 md:flex-row md:gap-0">
-      <div className="flex items-center md:w-2/5">
-        <h2 className="flex items-center gap-2 text-5xl font-bold tracking-wide">
+      <div className="flex items-center justify-center sm:justify-normal md:w-2/5">
+        <h2 className="flex items-center text-5xl font-bold tracking-wide">
           Dav
           <Zap
             fill="#fde047"

@@ -6,7 +6,7 @@ import { Space_Grotesk } from 'next/font/google';
 import Footer from './components/Footer';
 
 export const metadata: Metadata = {
-  title: '<David/>',
+  title: '<David />',
   description: 'Portfolio David Soldat',
 };
 
