@@ -1,13 +1,7 @@
 'use client';
 
 import { useState, ChangeEvent, FormEvent } from 'react';
-
-type FormData = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+import { FormData } from '../lib/types';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
@@ -66,7 +60,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-6">
+    <form onSubmit={handleSubmit} className="mt-10 w-full max-w-lg space-y-6">
       <div>
         <label className="mb-2 block font-medium" htmlFor="name">
           Your name
