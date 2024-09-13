@@ -22,7 +22,7 @@ const projects: Project[] = [
       'This app is designed to allow users to explore and book cabins easily. Offers a seamless and interactive experience for making cabin reservations',
     technologies: ['next', 'supabase', 'tailwind'],
     image: wildOasis,
-    link: 'https://my-ecommerce-app.com',
+    link: 'https://cabins-booking-app-website.vercel.app/',
   },
   {
     title: 'Gas Delivery App',

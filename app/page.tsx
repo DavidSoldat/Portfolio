@@ -32,35 +32,32 @@ export default function Home() {
           passion for web development. I specialize in crafting seamless user
           experiences using{' '}
           <span>
-            <RiReactjsFill className="inline-block text-gray-600 dark:text-purple-300" />{' '}
+            <RiReactjsFill className="inline-block text-blue-700 dark:text-blue-300" />{' '}
           </span>
           React.js,{' '}
           <span>
-            <RiNextjsFill className="inline text-gray-600 dark:text-purple-300" />
+            <RiNextjsFill className="inline text-gray-800 dark:text-gray-200" />
           </span>{' '}
           Next.js,{' '}
           <span>
-            <RiJavascriptFill className="inline-block text-gray-600 dark:text-purple-300" />{' '}
+            <RiJavascriptFill className="inline-block text-yellow-400 dark:text-yellow-300" />{' '}
           </span>
           JavaScript,{' '}
           <span>
-            <BiLogoTypescript className="inline-block text-gray-600 dark:text-purple-300" />{' '}
+            <BiLogoTypescript className="inline-block text-indigo-700 dark:text-indigo-300" />{' '}
           </span>
           TypeScript,{' '}
           <span>
-            <BiLogoPostgresql className="inline-block text-gray-600 dark:text-purple-300" />{' '}
+            <BiLogoPostgresql className="inline-block text-indigo-800 dark:text-gray-300" />{' '}
           </span>
           PostgreSQL and{' '}
           <span>
-            <RiTailwindCssFill className="inline-block text-gray-600 dark:text-purple-300" />{' '}
+            <RiTailwindCssFill className="inline-block text-sky-500" />{' '}
           </span>
           TailwindCSS among other modern technologies. When I&apos;m not coding,
           you might find me watching{' '}
           <span>
-            <SiF1
-              className="inline-block text-gray-600 dark:text-purple-300"
-              size={40}
-            />{' '}
+            <SiF1 className="inline-block text-red-700" size={40} />{' '}
           </span>{' '}
           or binging on a TV show. Based in Banja Luka{' '}
           <div className="group relative inline">
@@ -72,7 +69,7 @@ export default function Home() {
           I&apos;m always open to connecting, feel free to reach out to me via
           the links below or in{' '}
           <Link
-            className="hover-underline text-gray-600 decoration-current dark:text-purple-300"
+            className="hover-underline text-purple-700 decoration-current dark:text-purple-300"
             href="/contact"
           >
             Contact section.
