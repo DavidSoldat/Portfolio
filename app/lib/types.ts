@@ -8,6 +8,7 @@ export type Project = {
   imageDark?: string | StaticImageData;
   link: string;
   hasDarkMode?: boolean;
+  inProgress?: boolean;
 };
 
 export type FormData = {

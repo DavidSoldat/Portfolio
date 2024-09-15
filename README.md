@@ -1,1 +1,1 @@
-Personal portfolio made with Next.js TailwindCSS and GSAP.
+Personal portfolio made with Next.js and TailwindCSS.

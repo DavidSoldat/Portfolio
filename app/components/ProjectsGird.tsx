@@ -4,7 +4,10 @@ import bookingImage from '@/app/images/booking-app-light.png';
 import bookingImageDark from '@/app/images/booking-app-dark.png';
 import wildOasis from '@/app/images/wild-oasis-web.png';
 import ProjectCard from './ProjectCard';
-
+import f1Blog from '@/app/images/f1blog.png';
+import portfolio from '@/app/images/portfolio.png';
+import portfolioDark from '@/app/images/portfolio-dark.png';
+import homequest from '@/app/images/homequest.png';
 const projects: Project[] = [
   {
     title: 'Reservation management app',
@@ -25,22 +28,30 @@ const projects: Project[] = [
     link: 'https://cabins-booking-app-website.vercel.app/',
   },
   {
-    title: 'Gas Delivery App',
+    title: 'F1 themed blog',
     description:
-      'A location-based gas delivery service app, allowing users to place orders and track deliveries.',
-    technologies: ['Next.js', 'Vercel Postgres', 'Stripe', 'MapBox'],
-    image: bookingImage,
-    imageDark: bookingImageDark,
-    link: 'https://my-gas-delivery-app.com',
+      'My F1 Blog" is a dynamic and engaging web application designed to provide Formula One enthusiasts platform to share their thoughts, insights, and experiences.',
+    technologies: ['mongodb', 'express', 'react', 'nodejs'],
+    image: f1Blog,
+    link: '/',
   },
   {
-    title: 'Real Estate Listings Platform',
+    title: 'Portfolio',
+    description: 'Personal portfolio site.',
+    technologies: ['next', 'tailwind'],
+    image: portfolio,
+    imageDark: portfolioDark,
+    link: '/',
+    hasDarkMode: true,
+  },
+  {
+    title: '[In Progress] Home Quest',
     description:
-      'A platform to browse, search, and list real estate properties with detailed information and images.',
-    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
-    image: bookingImage,
-    imageDark: bookingImageDark,
-    link: 'https://homequest.com',
+      'HomeQuest is an advanced real estate platform designed to streamline the process of buying, selling, and renting properties.',
+    technologies: ['next', 'tailwind', 'prisma', 'postgres', 'firebase'],
+    image: homequest,
+    link: '/',
+    inProgress: true,
   },
 ];
 

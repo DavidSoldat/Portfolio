@@ -10,6 +10,9 @@ import {
 import { SiF1 } from 'react-icons/si';
 
 export default function Home() {
+  function getTime() {
+    return new Date().toLocaleString('en-GB', { timeZone: 'Europe/Sarajevo' });
+  }
   return (
     <div className="flex w-full animate-blur-to-normal flex-col items-center gap-16 px-6 py-10 md:flex-row md:gap-0">
       <div className="flex items-center justify-center sm:justify-normal md:w-2/5">
@@ -44,11 +47,11 @@ export default function Home() {
           </span>
           JavaScript,{' '}
           <span>
-            <BiLogoTypescript className="inline-block text-indigo-700 dark:text-indigo-300" />{' '}
+            <BiLogoTypescript className="inline-block text-sky-700 dark:text-sky-300" />{' '}
           </span>
           TypeScript,{' '}
           <span>
-            <BiLogoPostgresql className="inline-block text-indigo-800 dark:text-gray-300" />{' '}
+            <BiLogoPostgresql className="inline-block text-sky-800 dark:text-purple-100" />{' '}
           </span>
           PostgreSQL and{' '}
           <span>
@@ -63,7 +66,7 @@ export default function Home() {
           <div className="group relative inline">
             <span className="text-gray-600 dark:text-purple-300">(.ba)</span>
             <div className="absolute bottom-10 left-0 hidden w-48 rounded-lg bg-gray-800 p-2 text-sm text-purple-100 shadow-lg group-hover:block">
-              Bosnia and Herzegovina
+              Bosnia and Herzegovina {getTime()}
             </div>
           </div>{' '}
           I&apos;m always open to connecting, feel free to reach out to me via
