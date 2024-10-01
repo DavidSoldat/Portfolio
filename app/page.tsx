@@ -8,11 +8,9 @@ import {
   RiTailwindCssFill,
 } from 'react-icons/ri';
 import { SiF1 } from 'react-icons/si';
+import LiveTime from './components/LiveTime';
 
 export default function Home() {
-  function getTime() {
-    return new Date().toLocaleString('en-GB', { timeZone: 'Europe/Sarajevo' });
-  }
   return (
     <div className="flex w-full animate-blur-to-normal flex-col items-center gap-16 px-6 py-10 md:flex-row md:gap-0">
       <div className="flex items-center justify-center sm:justify-normal md:w-2/5">
@@ -66,7 +64,7 @@ export default function Home() {
           <div className="group relative inline">
             <span className="text-gray-600 dark:text-purple-300">(.ba)</span>
             <div className="absolute bottom-10 left-0 hidden w-48 rounded-lg bg-gray-800 p-2 text-sm text-purple-100 shadow-lg group-hover:block">
-              Bosnia and Herzegovina {getTime()}
+              Bosnia and Herzegovina <LiveTime />
             </div>
           </div>{' '}
           I&apos;m always open to connecting, feel free to reach out to me via
