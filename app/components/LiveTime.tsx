@@ -16,7 +16,7 @@ const LiveTime = () => {
     return () => clearInterval(timerId);
   }, []);
 
-  return <span>Current time: {currentTime}</span>;
+  return <span>Current time:{currentTime}</span>;
 };
 
 export default LiveTime;
