@@ -2,12 +2,12 @@ import { Zap } from 'lucide-react';
 import Link from 'next/link';
 import { BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi';
 import {
-  RiJavascriptFill,
+  RiJavaFill,
   RiNextjsFill,
   RiReactjsFill,
   RiTailwindCssFill,
 } from 'react-icons/ri';
-import { SiF1 } from 'react-icons/si';
+import { SiF1, SiSpringboot } from 'react-icons/si';
 import LiveTime from './components/LiveTime';
 
 export default function Home() {
@@ -41,13 +41,17 @@ export default function Home() {
           </span>{' '}
           Next.js,{' '}
           <span>
-            <RiJavascriptFill className="inline-block text-yellow-400 dark:text-yellow-300" />{' '}
-          </span>
-          JavaScript,{' '}
-          <span>
             <BiLogoTypescript className="inline-block text-sky-700 dark:text-sky-300" />{' '}
           </span>
           TypeScript,{' '}
+          <span>
+            <SiSpringboot className="inline-block text-green-600 dark:text-green-700" />{' '}
+          </span>
+          Spring Boot,{' '}
+          <span>
+            <RiJavaFill className="inline-block text-yellow-400 dark:text-yellow-300" />{' '}
+          </span>
+          Java,{' '}
           <span>
             <BiLogoPostgresql className="inline-block text-sky-800 dark:text-purple-100" />{' '}
           </span>

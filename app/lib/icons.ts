@@ -1,5 +1,6 @@
 import { BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi';
 import {
+  RiJavaFill,
   RiJavascriptFill,
   RiNextjsFill,
   RiNodejsFill,
@@ -13,6 +14,7 @@ import {
   SiMongodb,
   SiPrisma,
   SiReactquery,
+  SiSpringboot,
 } from 'react-icons/si';
 
 const technologyIcons: {
@@ -22,6 +24,8 @@ const technologyIcons: {
   next: [RiNextjsFill, 'text-black dark:text-purple-100'],
   js: [RiJavascriptFill, 'text-yellow-500'],
   ts: [BiLogoTypescript, 'text-blue-500'],
+  java: [RiJavaFill, 'text-sky-700'],
+  springboot: [SiSpringboot, 'text-green-700'],
   tailwind: [RiTailwindCssFill, 'text-teal-500'],
   supabase: [RiSupabaseFill, 'text-green-500'],
   express: [SiExpress, 'text-black dark:text-purple-100'],

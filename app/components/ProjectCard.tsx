@@ -49,7 +49,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <Tilt>
-      <div className="shadow-lgz max-w-lg overflow-hidden rounded-xl bg-white dark:bg-slate-950">
+      <div className="h-full max-w-lg overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-950">
         <a href={project.link} target="_blank" rel="noopener noreferrer">
           <div className="relative h-48 w-full">
             <Image

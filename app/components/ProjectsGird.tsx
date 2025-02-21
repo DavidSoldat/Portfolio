@@ -7,6 +7,7 @@ import ProjectCard from './ProjectCard';
 import f1Blog from '@/app/images/f1blog.png';
 import portfolio from '@/app/images/portfolio.png';
 import portfolioDark from '@/app/images/portfolio-dark.png';
+import velura from '@/app/images/velura.png';
 import homequest from '@/app/images/homequest.png';
 const projects: Project[] = [
   {
@@ -38,7 +39,7 @@ const projects: Project[] = [
   {
     title: 'Portfolio',
     description: 'Personal portfolio site.',
-    technologies: ['next', 'tailwind'],
+    technologies: ['next', 'tailwind', 'ts'],
     image: portfolio,
     imageDark: portfolioDark,
     link: '/',
@@ -53,11 +54,20 @@ const projects: Project[] = [
     link: '/',
     inProgress: true,
   },
+  {
+    title: '[In Progress] Velura.Co',
+    description:
+      'Velura.co is a sleek e-commerce store offering a curated selection of luxury clothing. Designed for those who appreciate quality and style, it blends high-end fashion with effortless elegance.',
+    technologies: ['react', 'tailwind', 'ts', 'springBoot', 'postgres', 'java'],
+    image: velura,
+    link: '/',
+    inProgress: true,
+  },
 ];
 
 export default function ProjectsGird() {
   return (
-    <div className="grid w-full grid-cols-1 gap-8 py-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-16 dark:text-gray-100">
+    <div className="h grid w-full grid-cols-1 gap-8 py-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-16 dark:text-gray-100">
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
