@@ -16,7 +16,7 @@ const projects: Project[] = [
       'HomeQuest is a full-stack real estate platform designed to streamline the process of buying, selling and renting properties. This project demonstrates my ability to build scalable, full-stack applications with modern technologies while delivering a seamless user experience',
     technologies: ['next', 'tailwind', 'prisma', 'postgres', 'firebase'],
     image: homequest,
-    link: '/',
+    link: 'https://home-quest-eta.vercel.app/',
     inProgress: true,
   },
   {
