@@ -19,7 +19,7 @@ export default function Home() {
           <Zap
             fill="#fde047"
             color="#facc15"
-            size={50}
+            size={55}
             style={{
               animation: 'pulseGlow 1.5s infinite',
             }}

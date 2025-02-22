@@ -11,9 +11,27 @@ import velura from '@/app/images/velura.png';
 import homequest from '@/app/images/homequest.png';
 const projects: Project[] = [
   {
+    title: '[In Progress] Home Quest',
+    description:
+      'HomeQuest is a full-stack real estate platform designed to streamline the process of buying, selling and renting properties. This project demonstrates my ability to build scalable, full-stack applications with modern technologies while delivering a seamless user experience',
+    technologies: ['next', 'tailwind', 'prisma', 'postgres', 'firebase'],
+    image: homequest,
+    link: '/',
+    inProgress: true,
+  },
+  {
+    title: '[In Progress] Velura.Co',
+    description:
+      'Velura.co is a sleek, full-stack e-commerce platform offering a curated selection of luxury clothing. Implemented secure user authentication and authorization using JWT (JSON Web Tokens). Utilized Axios for seamless communication between the frontend and backend.',
+    technologies: ['react', 'tailwind', 'ts', 'springBoot', 'postgres', 'java'],
+    image: velura,
+    link: '/',
+    inProgress: true,
+  },
+  {
     title: 'Reservation management app',
     description:
-      'Cabin reservation management application built for employees of the resort to manage reservations, cabins, prices and more.',
+      'A comprehensive cabin booking application designed for employees to manage cabins and reservations efficiently. Manage reservations by checking guests in/out, updating bookings, and viewing reservation details. Authentication & Authorization:  Secure employee access with login functionality; only authenticated users can manage cabins and reservations',
     technologies: ['react', 'js', 'supabase', 'reactquery'],
     image: bookingImage,
     imageDark: bookingImageDark,
@@ -23,7 +41,7 @@ const projects: Project[] = [
   {
     title: 'The wild oasis',
     description:
-      'This app is designed to allow users to explore and book cabins easily. Offers a seamless and interactive experience for making cabin reservations',
+      'A user-friendly cabin booking application designed to allow users to explore and book cabins effortlessly. Users can browse cabins, check availability, and make reservations with ease. Connected to the resort’s internal booking system, ensuring real-time updates on cabin availability and reservations.',
     technologies: ['next', 'supabase', 'tailwind'],
     image: wildOasis,
     link: 'https://cabins-booking-app-website.vercel.app/',
@@ -45,29 +63,11 @@ const projects: Project[] = [
     link: '/',
     hasDarkMode: true,
   },
-  {
-    title: '[In Progress] Home Quest',
-    description:
-      'HomeQuest is an advanced real estate platform designed to streamline the process of buying, selling, and renting properties.',
-    technologies: ['next', 'tailwind', 'prisma', 'postgres', 'firebase'],
-    image: homequest,
-    link: '/',
-    inProgress: true,
-  },
-  {
-    title: '[In Progress] Velura.Co',
-    description:
-      'Velura.co is a sleek e-commerce store offering a curated selection of luxury clothing. Designed for those who appreciate quality and style, it blends high-end fashion with effortless elegance.',
-    technologies: ['react', 'tailwind', 'ts', 'springBoot', 'postgres', 'java'],
-    image: velura,
-    link: '/',
-    inProgress: true,
-  },
 ];
 
 export default function ProjectsGird() {
   return (
-    <div className="h grid w-full grid-cols-1 gap-8 py-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-16 dark:text-gray-100">
+    <div className="grid w-full grid-cols-1 gap-8 py-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-16 dark:text-gray-100">
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
