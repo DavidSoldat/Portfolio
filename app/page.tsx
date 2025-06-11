@@ -27,40 +27,40 @@ export default function Home() {
           d
         </h2>
       </div>
-      <div className="flex items-center md:w-3/5">
+      <div className="flex w-full items-center md:w-3/5">
         <div className="text-justify text-2xl md:leading-relaxed md:tracking-wide">
           Hey there, welcome! 👋🏼 I&apos;m David, a software engineer with
           passion for web development. I specialize in crafting seamless user
           experiences using{' '}
-          <span>
+          <span className="md:text-nowrap">
             <RiReactjsFill className="inline-block text-blue-700 dark:text-blue-300" />{' '}
+            React.js,{' '}
           </span>
-          React.js,{' '}
-          <span>
-            <RiNextjsFill className="inline text-gray-800 dark:text-gray-200" />
+          <span className="md:text-nowrap">
+            <RiNextjsFill className="inline text-gray-800 dark:text-gray-200" />{' '}
+            Next.js,{' '}
           </span>{' '}
-          Next.js,{' '}
-          <span>
+          <span className="md:text-nowrap">
             <BiLogoTypescript className="inline-block text-sky-700 dark:text-sky-300" />{' '}
+            TypeScript,{' '}
           </span>
-          TypeScript,{' '}
-          <span>
+          <span className="md:text-nowrap">
             <SiSpringboot className="inline-block text-green-600 dark:text-green-700" />{' '}
+            Spring Boot,{' '}
           </span>
-          Spring Boot,{' '}
-          <span>
+          <span className="md:text-nowrap">
             <RiJavaFill className="inline-block text-yellow-400 dark:text-yellow-300" />{' '}
+            Java,{' '}
           </span>
-          Java,{' '}
-          <span>
+          <span className="md:text-nowrap">
             <BiLogoPostgresql className="inline-block text-sky-800 dark:text-purple-100" />{' '}
+            PostgreSQL and{' '}
           </span>
-          PostgreSQL and{' '}
           <span>
             <RiTailwindCssFill className="inline-block text-sky-500" />{' '}
+            TailwindCSS among other modern technologies. When I&apos;m not
+            coding, you might find me watching{' '}
           </span>
-          TailwindCSS among other modern technologies. When I&apos;m not coding,
-          you might find me watching{' '}
           <span>
             <SiF1 className="inline-block text-red-700" size={40} />{' '}
           </span>{' '}

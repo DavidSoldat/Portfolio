@@ -1,8 +1,8 @@
 import AnimatedBackground from '@/app/components/Background';
 import type { Metadata } from 'next';
 import Navigation from './components/Navigation';
-import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/next';
 import { Space_Grotesk } from 'next/font/google';
 import Footer from './components/Footer';
 
@@ -31,12 +31,12 @@ export default function RootLayout({
 
             <div className="flex flex-grow text-gray-900 dark:text-violet-100">
               {children}
-              <Analytics />
             </div>
 
             <Footer />
           </div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
