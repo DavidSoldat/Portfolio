@@ -17,6 +17,7 @@ export const projects: Project[] = [
     image: homequest,
     link: 'https://home-quest-eta.vercel.app/',
     inProgress: true,
+    category: 'Full-stack',
   },
   {
     title: '[In Progress] Velura.Co',
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     image: velura,
     link: '/',
     inProgress: true,
+    category: 'Full-stack',
   },
   {
     title: 'Reservation management app',
@@ -36,6 +38,7 @@ export const projects: Project[] = [
     imageDark: bookingImageDark,
     link: 'https://cabins-booking-app.vercel.app',
     hasDarkMode: true,
+    category: 'Full-stack',
   },
   {
     title: 'The wild oasis',
@@ -44,6 +47,7 @@ export const projects: Project[] = [
     technologies: ['next', 'supabase', 'postgres', 'tailwind'],
     image: wildOasis,
     link: 'https://cabins-booking-app-website.vercel.app/',
+    category: 'Website',
   },
   {
     title: 'F1 themed blog',
@@ -52,6 +56,7 @@ export const projects: Project[] = [
     technologies: ['mongodb', 'express', 'react', 'nodejs'],
     image: f1Blog,
     link: '/',
+    category: 'Full-stack',
   },
   {
     title: 'Portfolio',
@@ -62,5 +67,6 @@ export const projects: Project[] = [
     imageDark: portfolioDark,
     link: '/',
     hasDarkMode: true,
+    category: 'Website',
   },
 ];

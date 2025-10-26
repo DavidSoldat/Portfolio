@@ -9,6 +9,7 @@ export type Project = {
   link: string;
   hasDarkMode?: boolean;
   inProgress?: boolean;
+  category?: string;
 };
 
 export type FormData = {

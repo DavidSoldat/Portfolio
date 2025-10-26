@@ -5,6 +5,7 @@ import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import { Space_Grotesk } from 'next/font/google';
 import Footer from './components/Footer';
+import { ThemeProvider } from 'next-themes';
 
 export const metadata: Metadata = {
   title: '<David />',
@@ -24,18 +25,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`min-h-screen antialiased ${space.className}`}>
-        <div className="relative min-h-screen">
-          <AnimatedBackground />
-          <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl animate-blur-to-normal flex-col">
-            <Navigation />
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <div className="relative min-h-screen">
+            <AnimatedBackground />
+            <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl animate-blur-to-normal flex-col">
+              <Navigation />
 
-            <div className="flex flex-grow text-gray-900 dark:text-violet-100">
-              {children}
+              <div className="flex flex-grow text-gray-900 dark:text-violet-100">
+                {children}
+              </div>
+
+              <Footer />
             </div>
-
-            <Footer />
           </div>
-        </div>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
