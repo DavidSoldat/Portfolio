@@ -6,7 +6,6 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 const nextConfig = {
-  swcMinify: true,
   compress: true,
 
   images: {

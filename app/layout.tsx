@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`min-h-screen antialiased ${space.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system">
           <div className="relative min-h-screen">

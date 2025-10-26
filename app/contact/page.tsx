@@ -1,14 +1,5 @@
 import { Metadata } from 'next';
-import dynamic from 'next/dynamic';
-
-const ContactForm = dynamic(() => import('../components/ContactForm'), {
-  loading: () => (
-    <div className="mx-auto w-full max-w-2xl animate-pulse">
-      <div className="h-96 rounded-2xl bg-gray-800" />
-    </div>
-  ),
-  ssr: false,
-});
+import ContactForm from '../components/ContactForm';
 
 export const metadata: Metadata = {
   title: '<ContactMe />',
