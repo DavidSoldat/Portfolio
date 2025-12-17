@@ -6,9 +6,20 @@ import portfolioDark from '@/app/images/portfolio-dark.png';
 import portfolio from '@/app/images/portfolio.png';
 import velura from '@/app/images/velura.png';
 import wildOasis from '@/app/images/wild-oasis-web.png';
+import datalytics from '@/app/images/datalytics.png';
 import { Project } from './types';
 
 export const projects: Project[] = [
+  {
+    title: '[In Progress] Datalytics',
+    description:
+      'A modern data analytics platform that transforms CSV and Excel files into actionable insights. Upload datasets, get instant column statistics, visualize data with interactive charts, and manage your analytics all in one place. Built with Next.js, Spring Boot, and PostgreSQL.',
+    technologies: ['next', 'springBoot', 'postgres', 'tailwind', 'ts', 'java'],
+    image: datalytics,
+    link: 'https://github.com/DavidSoldat/DataAnalyticsApp/',
+    inProgress: true,
+    category: 'Full-stack',
+  },
   {
     title: '[In Progress] Home Quest',
     description:
@@ -25,7 +36,7 @@ export const projects: Project[] = [
       'Velura.co is a sleek, full-stack e-commerce platform offering a curated selection of luxury clothing. Implemented secure user authentication and authorization using JWT (JSON Web Token). Utilized Axios for seamless communication between the frontend and backend.',
     technologies: ['react', 'springBoot', 'postgres', 'ts', 'java', 'tailwind'],
     image: velura,
-    link: '/',
+    link: 'https://github.com/DavidSoldat/eCommerce-store',
     inProgress: true,
     category: 'Full-stack',
   },
